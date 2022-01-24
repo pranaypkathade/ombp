@@ -43,4 +43,7 @@ public interface OpenAuthServerAPI extends EndPointConstants {
 	@RequestMapping(value = "/open/search/theatres", method = RequestMethod.POST)
 	public List<Theatre> fetchAllTheatreBySearchCriteria(@RequestBody SearchCriteria searchCriteria) throws IOException;
 	
+	@RequestMapping(value = "/open/delete/movieshow", method = RequestMethod.POST)
+	public MovieShow deleteMovieShow(@RequestBody MovieShow movieShow) throws IOException;
+	
 }
